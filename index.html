@@ -32,14 +32,21 @@
 
       <!-- search result  -->
       <section class="my-7">
+        <!-- spinner or loader  -->
+        <div id="loading_spinner" class="text-center my-40 hidden">
+          <span class="loading loading-spinner text-primary loading-lg"></span>
+        </div>
+
         <div
           id="phone_container"
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         ></div>
 
         <!-- show all button  -->
-        <div id="show_all_container" class="hidden">
-          <button class="btn btn-active btn-accent">Show All</button>
+        <div id="show_all_container" class="hidden text-center my-8">
+          <button onclick="handleShowAll()" class="btn btn-active btn-accent">
+            Show All
+          </button>
         </div>
       </section>
     </main>
